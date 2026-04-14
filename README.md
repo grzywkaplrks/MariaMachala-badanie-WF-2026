@@ -1,3 +1,4 @@
+<img width="1920" height="913" alt="Zrzut ekranu_20260414_193100" src="https://github.com/user-attachments/assets/fbb09292-e746-4eb8-b1ad-1742054d4e87" />
 # 🏃‍♀️ Rola WF-u w budowaniu relacji w klasie
 
 ![Status](https://img.shields.io/badge/Status-Badania_Zakończone-success?style=for-the-badge)
