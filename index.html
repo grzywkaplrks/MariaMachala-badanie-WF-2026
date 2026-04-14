@@ -224,8 +224,13 @@
             .info-grid { grid-template-columns: 1fr; }
             h1 { font-size: 34px; }
 
-            /* Przebudowa tabeli w karty dla mobile */
-            .table-wrapper { padding-bottom: 10px; overflow-x: hidden; }
+            /* Przebudowa tabeli w karty dla mobile z poprawką przewijania */
+            .table-wrapper { 
+                padding-bottom: 10px; 
+                overflow: visible; 
+                touch-action: pan-y; 
+            }
+            
             table { min-width: 100%; display: block; }
             thead { display: none; }
             tbody { display: block; width: 100%; }
@@ -247,15 +252,14 @@
             .demo-label-container { height: auto; padding: 12px; border-radius: 8px; }
             .score { height: 44px; width: 44px; font-size: 13px; margin: 0 2px;}
 
-            /* Ukrycie paska przewijania na urządzeniach mobilnych */
-            ::-webkit-scrollbar {
-                display: none;
-                width: 0;
-                background: transparent;
+            /* Bezpieczne ukrycie paska przewijania tylko dla głównego widoku */
+            html, body {
+                scrollbar-width: none; /* Firefox */
+                -ms-overflow-style: none; /* IE/Edge */
             }
-            * {
-                scrollbar-width: none;
-                -ms-overflow-style: none;
+            
+            html::-webkit-scrollbar, body::-webkit-scrollbar {
+                display: none; /* Chrome, Safari, Opera */
             }
         }
 
@@ -290,7 +294,7 @@
         .reveal { opacity: 0; transform: translateY(40px); transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
         .reveal.active { opacity: 1; transform: translateY(0); }
 
-        /* Custom Scrollbar */
+        /* Custom Scrollbar (Desktop) */
         ::-webkit-scrollbar { width: 8px; height: 8px; }
         ::-webkit-scrollbar-track { background: var(--space-dark); }
         ::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.2); border-radius: 10px; }
