@@ -1,44 +1,31 @@
-# 🏅 Rola Aktywności Fizycznej w Kształtowaniu Postaw Społecznych Uczniów
+# 🏃‍♀️ Rola WF-u w budowaniu relacji w klasie
 
-![Research Status](https://img.shields.io/badge/Status-Research_Completed-success?style=for-the-badge)
-![Field](https://img.shields.io/badge/Dziedzina-Kultura_Fizyczna_i_Socjologia-blue?style=for-the-badge)
-![Location](https://img.shields.io/badge/Miejsce-Ostrów_Wielkopolski-orange?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Badania_Zakończone-success?style=for-the-badge)
+![Dziedzina](https://img.shields.io/badge/Dziedzina-Edukacja_i_Sport-blue?style=for-the-badge)
+![Lokalizacja](https://img.shields.io/badge/Miejsce-Ostrów_Wielkopolski-orange?style=for-the-badge)
 
 ## 📖 O projekcie
+Witaj w moim repozytorium! Znajdziesz tutaj materiały oraz podsumowanie wyników badań, które przeprowadziłam w ramach mojej pracy magisterskiej. 
 
-Niniejsze repozytorium zawiera materiały oraz analizę wyników badań przeprowadzonych w ramach pracy magisterskiej dotyczącej **roli lekcji wychowania fizycznego w procesie kształtowania postaw społecznych i relacji rówieśniczych**. 
+Głównym celem tego projektu było sprawdzenie, **jak lekcje wychowania fizycznego pomagają uczniom integrować się z klasą**, współpracować w zespole oraz radzić sobie ze sportową rywalizacją na różnych etapach dorastania.
 
-[cite_start]Głównym celem badawczym była diagnoza wpływu zorganizowanej aktywności ruchowej na integrację grupy, gotowość do współpracy oraz przestrzeganie zasad fair play w specyficznych warunkach szkolnych[cite: 13, 16].
+## 📊 Jak przeprowadzono badania?
+Badania zrealizowano 14 kwietnia 2026 roku w Szkole Podstawowej nr 1 w Ostrowie Wielkopolskim.
+* **Kto wziął udział?** 57 uczniów z klas IV oraz VIII.
+* **Narzędzie:** Autorska, w pełni anonimowa ankieta.
+* **Co dokładnie badano?** * Radość z aktywności ruchowej.
+  * Poziom stresu i lęku przed krytyką na forum klasy.
+  * Podejście do zasad *fair play* i chęć pomagania słabszym na boisku.
 
-## 🧪 Metodologia i Przebieg Badań
+## 💡 Najważniejsze wnioski
+Zebrane wyniki napawają dużym optymizmem i pokazują, że sport szkolny ma ogromną moc wychowawczą:
+1. **Świetna integracja:** Zdecydowana większość uczniów uważa, że wspólne ćwiczenia i gry zespołowe bardzo mocno łączą klasę.
+2. **Umiejętność współpracy:** Uczniowie potrafią grać w jednej drużynie i podać piłkę nawet osobom, za którymi na co dzień nie przepadają.
+3. **Różnice wiekowe:** Wraz z wiekiem (klasa VIII) pojawia się nieco większy lęk przed oceną rówieśników, jednak nie zaburza to ogólnej chęci do zabawy i współpracy.
 
-Badanie zostało zrealizowane **14 kwietnia 2026 roku** w Szkole Podstawowej nr 1 w Ostrowie Wielkopolskim. 
+## 📂 Co znajdziesz w plikach?
+* `raport.html` - Interaktywny i czytelny raport z pełnymi wynikami moich badań (podzielony na płeć i klasy). Wystarczy pobrać plik i otworzyć go w dowolnej przeglądarce internetowej.
+* `README.md` - Ten dokument informacyjny.
 
-### Parametry badawcze:
-* [cite_start]**Metoda:** Sondaż diagnostyczny[cite: 101, 104].
-* [cite_start]**Technika:** Autorski kwestionariusz ankiety oparty na 5-stopniowej skali Likerta[cite: 320, 324].
-* **Próba (N):** 57 uczniów klas IV oraz VIII.
-* **Obszary analizy:**
-    * Klimat emocjonalny i dobrostan ucznia podczas zajęć.
-    * Jakość relacji interpersonalnych i poziom integracji klasy.
-    * Postawy aksjologiczne w sporcie (fair play, stosunek do rywalizacji).
-
-## 📊 Główne Wnioski (High-Level)
-
-Analiza zgromadzonego materiału empirycznego pozwoliła na sformułowanie następujących wniosków ogólnych:
-1.  [cite_start]**Potencjał Integracyjny:** Lekcje WF stanowią kluczową płaszczyznę budowania kapitału społecznego w mikrostrukturze klasy[cite: 342, 350].
-2.  **Etyka Współpracy:** Wysoki poziom gotowości do kooperacji nawet w sytuacjach trudnych interpersonalnie.
-3.  [cite_start]**Dynamika Rozwojowa:** Zauważalne różnice w percepcji oceny społecznej między etapem późnego dzieciństwa a wczesnej adolescencji[cite: 330, 332].
-
-## 💻 Wykorzystane Technologie
-
-W wizualizacji wyników i prezentacji danych wykorzystano nowoczesne standardy webowe:
-* **HTML5 / CSS3** - strukturalizacja i profesjonalny design raportu.
-* **Git / GitHub** - system kontroli wersji dla dokumentacji badawczej.
-
-## 📁 Struktura Repozytorium
-
-```text
-├── raport.html              # Interaktywny raport z wynikami badań
-├── ankieta_wzor.pdf         # Wzór wykorzystanego narzędzia badawczego
-└── README.md                # Dokumentacja projektu
+---
+*Projekt badawczy przygotowany na potrzeby pracy magisterskiej. Autorka: Maria Machała (2026).*
