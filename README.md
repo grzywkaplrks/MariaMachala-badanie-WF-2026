@@ -1,4 +1,9 @@
-<img width="1920" height="913" alt="Zrzut ekranu_20260414_193100" src="https://github.com/user-attachments/assets/5cc5a734-3baf-41aa-9b21-4b3555ddb39b" />
+<div align="center">
+  <a href="https://mariamachalabadania2026.grzywaczbartek3.workers.dev/">
+    <img src="https://github.com/user-attachments/assets/5cc5a734-3baf-41aa-9b21-4b3555ddb39b" alt="Podgląd interaktywnego raportu analitycznego" width="100%" />
+  </a>
+</div>
+
 # 🌌 Analityka Postaw Społecznych a Wychowanie Fizyczne
 
 <div align="center">
