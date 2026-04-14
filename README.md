@@ -26,4 +26,4 @@ Analiza wykazała bardzo pozytywny wpływ zajęć sportowych na mikrostrukturę 
 3. **Wartości:** Zasady sportowej rywalizacji przekładają się na pozytywne zachowania społeczne w życiu codziennym szkoły.
 
 ---
-*Badania przeprowadziła Marysia Machała (2026). Dokumentacja techniczna i analiza danych: Bartek Grzywacz.*
+*Badania przeprowadziła Marysia Machała (2026).*
