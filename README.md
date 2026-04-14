@@ -4,28 +4,26 @@
 ![Dziedzina](https://img.shields.io/badge/Dziedzina-Edukacja_i_Sport-blue?style=for-the-badge)
 ![Lokalizacja](https://img.shields.io/badge/Miejsce-Ostrów_Wielkopolski-orange?style=for-the-badge)
 
+## 🌐 Strona projektu
+Pełna wizualizacja i interaktywne zestawienie wyników dostępne pod adresem:
+👉 [mariamachalabadania2026.grzywaczbartek3.workers.dev](https://mariamachalabadania2026.grzywaczbartek3.workers.dev/)
+
 ## 📖 O projekcie
-Witaj w moim repozytorium! Znajdziesz tutaj materiały oraz podsumowanie wyników badań, które przeprowadziłam w ramach mojej pracy magisterskiej. 
+Niniejsze repozytorium zawiera dokumentację oraz analizę wyników badań zrealizowanych w ramach pracy magisterskiej. 
 
-Głównym celem tego projektu było sprawdzenie, **jak lekcje wychowania fizycznego pomagają uczniom integrować się z klasą**, współpracować w zespole oraz radzić sobie ze sportową rywalizacją na różnych etapach dorastania.
+Badania, które **przeprowadziła Marysia Machała**, koncentrowały się na analizie wpływu lekcji wychowania fizycznego na integrację grupy rówieśniczej, gotowość do współpracy oraz kształtowanie postaw społecznych u uczniów na różnych etapach dorastania.
 
-## 📊 Jak przeprowadzono badania?
-Badania zrealizowano 14 kwietnia 2026 roku w Szkole Podstawowej nr 1 w Ostrowie Wielkopolskim.
-* **Kto wziął udział?** 57 uczniów z klas IV oraz VIII.
-* **Narzędzie:** Autorska, w pełni anonimowa ankieta.
-* **Co dokładnie badano?** * Radość z aktywności ruchowej.
-  * Poziom stresu i lęku przed krytyką na forum klasy.
-  * Podejście do zasad *fair play* i chęć pomagania słabszym na boisku.
+## 📊 Metodologia
+Badania zostały zrealizowane 14 kwietnia 2026 roku w Szkole Podstawowej nr 1 w Ostrowie Wielkopolskim.
+* **Grupa badawcza:** 57 uczniów z klas IV oraz VIII.
+* **Technika:** Anonimowy kwestionariusz ankiety (skala Likerta).
+* **Kluczowe obszary:** Klimat emocjonalny, relacje rówieśnicze, zasady fair play oraz integracja klasowa.
 
-## 💡 Najważniejsze wnioski
-Zebrane wyniki napawają dużym optymizmem i pokazują, że sport szkolny ma ogromną moc wychowawczą:
-1. **Świetna integracja:** Zdecydowana większość uczniów uważa, że wspólne ćwiczenia i gry zespołowe bardzo mocno łączą klasę.
-2. **Umiejętność współpracy:** Uczniowie potrafią grać w jednej drużynie i podać piłkę nawet osobom, za którymi na co dzień nie przepadają.
-3. **Różnice wiekowe:** Wraz z wiekiem (klasa VIII) pojawia się nieco większy lęk przed oceną rówieśników, jednak nie zaburza to ogólnej chęci do zabawy i współpracy.
-
-## 📂 Co znajdziesz w plikach?
-* `raport.html` - Interaktywny i czytelny raport z pełnymi wynikami moich badań (podzielony na płeć i klasy). Wystarczy pobrać plik i otworzyć go w dowolnej przeglądarce internetowej.
-* `README.md` - Ten dokument informacyjny.
+## 💡 Główne wnioski
+Analiza wykazała bardzo pozytywny wpływ zajęć sportowych na mikrostrukturę klasy:
+1. **Integracja:** Wspólna aktywność ruchowa jest postrzegana jako główny czynnik łączący zespół klasowy.
+2. **Kooperacja:** Uczniowie deklarują wysoką zdolność do współpracy w sytuacjach zadaniowych.
+3. **Wartości:** Zasady sportowej rywalizacji przekładają się na pozytywne zachowania społeczne w życiu codziennym szkoły.
 
 ---
-*Projekt badawczy przygotowany na potrzeby pracy magisterskiej. Autorka: Maria Machała (2026).*
+*Badania przeprowadziła Marysia Machała (2026). Dokumentacja techniczna i analiza danych: Bartek Grzywacz.*
