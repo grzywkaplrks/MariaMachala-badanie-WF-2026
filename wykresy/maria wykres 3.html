@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        .chart-container {
+            width: 950px;
+            border: 1px solid #bfbfbf;
+            padding: 40px;
+            background: #ffffff;
+        }
+
+        h2 {
+            font-size: 19px;
+            color: #000;
+            text-align: center;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #444;
+            text-align: center;
+            margin-bottom: 50px;
+            font-style: italic;
+            line-height: 1.4;
+        }
+
+        .bar-group {
+            margin-bottom: 100px;
+            position: relative;
+        }
+
+        .group-label {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        .full-bar {
+            display: flex;
+            height: 50px;
+            width: 100%;
+            background-color: #f2f2f2;
+            border: 1px solid #666;
+            border-radius: 2px;
+            position: relative;
+        }
+
+        /* Kolorystyka Likerta */
+        .likert-5 { background-color: #1e3a8a; }
+        .likert-4 { background-color: #3b82f6; }
+        .likert-3 { background-color: #a0aec0; }
+        .likert-2 { background-color: #f97316; }
+        .likert-1 { background-color: #dc2626; }
+
+        .segment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            box-sizing: border-box;
+            border-right: 0.5px solid rgba(255,255,255,0.4);
+            position: relative;
+        }
+
+        .segment:last-child { border-right: none; }
+
+        .label-in {
+            color: white;
+            font-size: 13px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+            white-space: nowrap;
+        }
+
+        .label-out-down {
+            position: absolute;
+            top: 130%;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #000;
+            font-size: 12px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .label-out-down::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            width: 1px;
+            height: 15px;
+            background: #000;
+        }
+
+        .deep { top: 200%; }
+        .deep::after { height: 50px; }
+
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 12px;
+            color: #333;
+        }
+
+        .color-box {
+            width: 15px;
+            height: 15px;
+            border: 1px solid #555;
+        }
+
+        .data-source {
+            font-size: 11px;
+            color: #666;
+            text-align: right;
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="chart-container">
+    <h2>Wykres 3. Zdolność do współpracy z rówieśnikami nielubianymi w sytuacjach zadaniowych</h2>
+    <div class="subtitle">Pytanie: „Czy potrafisz współpracować z osobami, za którymi na co dzień nie przepadasz, kiedy zdarzy się, że jesteście razem w drużynie podczas gry?”</div>
+
+    <div class="bar-group">
+        <div class="group-label">Klasa IV (n=28)</div>
+        <div class="full-bar">
+            <div class="segment likert-5" style="width: 53.6%;"><span class="label-in">15 (53,6%)</span></div>
+            <div class="segment likert-4" style="width: 25.0%;"><span class="label-in">7 (25,0%)</span></div>
+            <div class="segment likert-3" style="width: 14.3%;"><span class="label-in">4 (14,3%)</span></div>
+            <div class="segment likert-2" style="width: 7.1%;"><span class="label-out-down">2 (7,1%)</span></div>
+        </div>
+    </div>
+
+    <div class="bar-group">
+        <div class="group-label">Klasa VIII (n=29)</div>
+        <div class="full-bar">
+            <div class="segment likert-5" style="width: 34.5%;"><span class="label-in">10 (34,5%)</span></div>
+            <div class="segment likert-4" style="width: 24.1%;"><span class="label-in">7 (24,1%)</span></div>
+            <div class="segment likert-3" style="width: 20.7%;"><span class="label-in">6 (20,7%)</span></div>
+            <div class="segment likert-2" style="width: 13.8%;"><span class="label-in">4 (13,8%)</span></div>
+            <div class="segment likert-1" style="width: 6.9%;"><span class="label-out-down">2 (6,9%)</span></div>
+        </div>
+    </div>
+
+    <div class="legend">
+        <div class="legend-item"><div class="color-box likert-5"></div> Zdecydowanie tak</div>
+        <div class="legend-item"><div class="color-box likert-4"></div> Raczej tak</div>
+        <div class="legend-item"><div class="color-box likert-3"></div> Nie mam zdania</div>
+        <div class="legend-item"><div class="color-box likert-2"></div> Raczej nie</div>
+        <div class="legend-item"><div class="color-box likert-1"></div> Zdecydowanie nie</div>
+    </div>
+
+    <div class="data-source">Źródło: Opracowanie własne na podstawie badań empirycznych (N=57).</div>
+</div>
+
+</body>
+</html>
