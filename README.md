@@ -16,7 +16,7 @@
 
 > **Interaktywny system wizualizacji danych badawczych zrealizowany na potrzeby pracy magisterskiej.** Pełna analiza wpływu zorganizowanej aktywności ruchowej na kształtowanie postaw prospołecznych, integrację klasową oraz kooperację w warunkach rywalizacji.
 
-🔗 **[ZOBACZ INTERAKTYWNY RAPORT (LIVE PREVIEW)](https://mariamachalabadania2026.grzywaczbartek3.workers.dev/)**
+🔗 **[ZOBACZ INTERAKTYWNY RAPORT (LIVE PREVIEW)](https://mariamachalabadania2026.grzywkaplrks.workers.dev/)**
 
 ---
 
