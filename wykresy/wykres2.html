@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Wykres 2 - Wpływ Współpracy na Relacje</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px;
+        }
+        .chart-container {
+            width: 100%;
+            max-width: 1100px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .instruction {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+            text-align: center;
+            background: #e8f4f8;
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: 1px solid #bce8f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="chart-container">
+        <div style="height: 550px;">
+            <canvas id="myChart"></canvas>
+        </div>
+    </div>
+    
+    <p class="instruction">💡 <strong>Jak pobrać do pracy dyplomowej:</strong> Kliknij na wykres <strong>prawym przyciskiem myszy</strong> i wybierz <strong>"Zapisz grafikę jako..."</strong> (Save image as). Zapisany obraz będzie zawierał pełny tytuł i pytanie na samej górze.</p>
+
+    <script>
+        Chart.register(ChartDataLabels);
+
+        const customCanvasBackgroundColor = {
+            id: 'customCanvasBackgroundColor',
+            beforeDraw: (chart, args, options) => {
+                const {ctx} = chart;
+                ctx.save();
+                ctx.globalCompositeOperation = 'destination-over';
+                ctx.fillStyle = options.color || '#ffffff';
+                ctx.fillRect(0, 0, chart.width, chart.height);
+                ctx.restore();
+            }
+        };
+
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: [
+                    'Klasa IV - Dziewczęta (n=14)',
+                    'Klasa IV - Chłopcy (n=14)',
+                    'Klasa VIII - Dziewczęta (n=15)',
+                    'Klasa VIII - Chłopcy (n=14)'
+                ],
+                datasets: [
+                    {
+                        label: 'Zdecydowanie tak',
+                        data: [12, 12, 9, 9], 
+                        backgroundColor: '#1E3A8A', 
+                        borderRadius: 4
+                    },
+                    {
+                        label: 'Raczej tak',
+                        data: [2, 2, 5, 4],
+                        backgroundColor: '#3B82F6', 
+                        borderRadius: 4
+                    },
+                    {
+                        label: 'Nie mam zdania',
+                        data: [0, 0, 1, 1],
+                        backgroundColor: '#9CA3AF', 
+                        borderRadius: 4
+                    },
+                    {
+                        label: 'Raczej nie',
+                        data: [0, 0, 0, 0], 
+                        backgroundColor: '#F97316', 
+                        borderRadius: 4
+                    },
+                    {
+                        label: 'Zdecydowanie nie',
+                        data: [0, 0, 0, 0], 
+                        backgroundColor: '#DC2626', 
+                        borderRadius: 4
+                    }
+                ]
+            },
+            options: {
+                indexAxis: 'y', 
+                responsive: true,
+                maintainAspectRatio: false,
+                layout: {
+                    padding: { left: 10, right: 30, top: 10, bottom: 10 }
+                },
+                scales: {
+                    x: {
+                        stacked: true, 
+                        max: 15, 
+                        title: {
+                            display: true,
+                            text: 'Liczba oddanych głosów',
+                            font: { size: 16, weight: 'bold' }
+                        },
+                        ticks: {
+                            stepSize: 1,
+                            font: { size: 14 }
+                        }
+                    },
+                    y: {
+                        stacked: true,
+                        ticks: {
+                            font: { size: 15, weight: 'bold' },
+                            color: '#333'
+                        }
+                    }
+                },
+                plugins: {
+                    customCanvasBackgroundColor: {
+                        color: '#ffffff', 
+                    },
+                    title: {
+                        display: true,
+                        text: 'WYKRES 2. OCENA WPŁYWU WSPÓŁPRACY W GRACH ZESPOŁOWYCH NA RELACJE',
+                        font: { size: 20, weight: 'bold', family: "'Segoe UI', Tahoma, sans-serif" },
+                        color: '#2c3e50',
+                        padding: { top: 10, bottom: 5 }
+                    },
+                    subtitle: {
+                        display: true,
+                        text: 'Pytanie: „Czy uważasz, że udana współpraca podczas gier zespołowych na WF-ie pomaga w budowaniu lepszych relacji z rówieśnikami?”',
+                        font: { size: 15, style: 'italic', family: "'Segoe UI', Tahoma, sans-serif" },
+                        color: '#7f8c8d',
+                        padding: { bottom: 25 }
+                    },
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            padding: 20,
+                            font: { size: 14, weight: '500' },
+                            usePointStyle: true, 
+                            pointStyle: 'rectRounded'
+                        }
+                    },
+                    datalabels: {
+                        color: '#ffffff', 
+                        font: {
+                            size: 18,
+                            weight: 'bold'
+                        },
+                        formatter: function(value, context) {
+                            return value > 0 ? value : '';
+                        }
+                    },
+                    tooltip: {
+                        titleFont: { size: 15 },
+                        bodyFont: { size: 15 }
+                    }
+                }
+            },
+            plugins: [customCanvasBackgroundColor]
+        });
+    </script>
+</body>
+</html>
